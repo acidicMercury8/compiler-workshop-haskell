@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFrameworks>netcoreapp3.1;net5.0-windows;net6.0-windows;net7.0-windows;net8.0-windows</TargetFrameworks>
+        <LangVersion>10.0</LangVersion>
+        <OutputType>WinExe</OutputType>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>disable</ImplicitUsings>
+
+        <UseWindowsForms>true</UseWindowsForms>
+
+        <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+        <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="GlobalUsings.cs" />
+
+        <Compile Include="Program.cs" />
+
+        <Compile Include="MainForm.cs">
+            <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="MainForm.Designer.cs">
+            <DependentUpon>MainForm.cs</DependentUpon>
+        </Compile>
+
+        <Compile Include="CustomForm.cs" />
+        <Compile Include="CustomForm2.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <EmbeddedResource Include="MainForm.resx">
+            <DependentUpon>MainForm.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="CustomForm.resx">
+            <DependentUpon>CustomForm.cs</DependentUpon>
+        </EmbeddedResource>
+    </ItemGroup>
+</Project>

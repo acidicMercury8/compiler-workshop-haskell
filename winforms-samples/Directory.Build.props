@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+    <PropertyGroup>
+        <RootPath>$(MSBuildThisFileDirectory)</RootPath>
+        <ProjectDir>$(RootPath)</ProjectDir>
+        <BaseIntermediateOutputPath>$(RootPath)\obj\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
+        <BaseOutputPath>$(RootPath)\bin\</BaseOutputPath>
+
+        <NoWarn>$(NoWarn);NETSDK1138</NoWarn>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+        <DebugSymbols>false</DebugSymbols>
+        <DebugType>None</DebugType>
+    </PropertyGroup>
+</Project>
