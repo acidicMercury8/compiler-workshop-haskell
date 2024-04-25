@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFrameworks>net7.0-android;net8.0-android</TargetFrameworks>
+        <OutputType>Exe</OutputType>
+        <Nullable>enable</Nullable>
+        <SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
+        <ApplicationId>com.acidicMercury8.AvaloniaTest</ApplicationId>
+        <ApplicationVersion>1</ApplicationVersion>
+        <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+        <AndroidPackageFormat>apk</AndroidPackageFormat>
+        <AndroidEnableProfiledAot>False</AndroidEnableProfiledAot>
+        <AndroidManifest>src\MultiTargetSampleApp.Android\Properties\AndroidManifest.xml</AndroidManifest>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <AndroidResource Include="Icon.png">
+            <Link>Resources\drawable\Icon.png</Link>
+        </AndroidResource>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Avalonia.Android" Version="11.0.10" />
+        <PackageReference Include="Xamarin.AndroidX.Core.SplashScreen" Version="1.0.1.6" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\MultiTargetSampleApp\MultiTargetSampleApp.csproj" />
+    </ItemGroup>
+</Project>
