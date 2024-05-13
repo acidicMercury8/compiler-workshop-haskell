@@ -25,7 +25,7 @@ internal class Program {
             var process = new Process {
                 StartInfo = new ProcessStartInfo {
                     FileName = "git.exe",
-                    Arguments = "fetch -v --progress --prune --tags \"origin\"",
+                    Arguments = "fetch --prune --tags",
                     WorkingDirectory = directory,
                 },
             };
@@ -35,7 +35,5 @@ internal class Program {
         }
 
         Console.WriteLine("All actions completed!\n");
-        Console.WriteLine("Press any key to continue...");
-        Console.ReadKey(true);
     }
 }
