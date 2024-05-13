@@ -1,0 +1,44 @@
+<Window
+    x:Class="AcrylicBlurWthoutDecoration.Views.MainWindow"
+    x:DataType="vm:MainWindowViewModel"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:vm="using:AcrylicBlurWthoutDecoration.ViewModels"
+    Title="AcrylicBlurWthoutDecoration"
+    Width="300"
+    Height="400"
+    d:DesignHeight="300"
+    d:DesignWidth="400"
+    Background="Transparent"
+    CanResize="False"
+    ExtendClientAreaToDecorationsHint="True"
+    Icon="/Assets/avalonia-logo.ico"
+    SystemDecorations="None"
+    TransparencyLevelHint="AcrylicBlur"
+    WindowStartupLocation="CenterScreen"
+    mc:Ignorable="d">
+    <Design.DataContext>
+        <vm:MainWindowViewModel />
+    </Design.DataContext>
+
+    <Border>
+        <ExperimentalAcrylicBorder
+            CornerRadius="10"
+            IsHitTestVisible="False">
+            <ExperimentalAcrylicBorder.Material>
+                <ExperimentalAcrylicMaterial
+                    BackgroundSource="Digger"
+                    MaterialOpacity="0.1"
+                    TintColor="Black"
+                    TintOpacity="1" />
+            </ExperimentalAcrylicBorder.Material>
+
+            <TextBlock
+                Text="{Binding Greeting}"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center" />
+        </ExperimentalAcrylicBorder>
+    </Border>
+</Window>
