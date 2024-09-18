@@ -13,6 +13,12 @@ internal static class Program {
 #if NET6_0_OR_GREATER
         ApplicationConfiguration.Initialize();
 #endif
+
+#if NET5_0 || NETCOREAPP3_1
+        Application.EnableVisualStyles();
+        Application.SetCompatibleTextRenderingDefault(false);
+#endif
+
         Application.Run(new MainForm());
     }
 }
