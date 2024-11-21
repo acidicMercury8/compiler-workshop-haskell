@@ -1,0 +1,47 @@
+<UserControl
+    x:Class="CustomMovableControlsApplication.Views.MainView"
+    x:DataType="vm:MainViewModel"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:c="using:CustomMovableControlsApplication.Controls"
+    xmlns:vm="using:CustomMovableControlsApplication.ViewModels"
+    d:DesignHeight="450"
+    d:DesignWidth="500"
+    mc:Ignorable="d">
+    <Design.DataContext>
+        <!--
+            This only sets the DataContext for the previewer in an IDE,
+            to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs)
+        -->
+        <vm:MainViewModel />
+    </Design.DataContext>
+
+    <Canvas>
+        <c:MovableBorder
+            Canvas.Left="0"
+            Canvas.Top="25"
+            Width="100"
+            Height="25"
+            Background="Red"
+            BorderBrush="Red"
+            BorderThickness="1" />
+        <c:MovableBorder
+            Canvas.Left="0"
+            Canvas.Top="0"
+            Width="100"
+            Height="25"
+            Background="Yellow"
+            BorderBrush="Yellow"
+            BorderThickness="1" />
+        <c:MovableBorder
+            Canvas.Left="100"
+            Canvas.Top="75"
+            Width="100"
+            Height="25"
+            Background="Blue"
+            BorderBrush="Blue"
+            BorderThickness="1" />
+    </Canvas>
+</UserControl>

@@ -19,6 +19,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LocalizationApplication", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcrylicBlurWthoutDecoration", "src\AcrylicBlurWthoutDecoration\AcrylicBlurWthoutDecoration.csproj", "{FAB1B5B5-254F-478A-8DC6-AD3E9BBA1C1B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomMovableControlsApplication", "src\CustomMovableControlsApplication\CustomMovableControlsApplication.csproj", "{F8A64900-4944-4BF9-B694-8EC0ACAC5C17}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{FAB1B5B5-254F-478A-8DC6-AD3E9BBA1C1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAB1B5B5-254F-478A-8DC6-AD3E9BBA1C1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAB1B5B5-254F-478A-8DC6-AD3E9BBA1C1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8A64900-4944-4BF9-B694-8EC0ACAC5C17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8A64900-4944-4BF9-B694-8EC0ACAC5C17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8A64900-4944-4BF9-B694-8EC0ACAC5C17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8A64900-4944-4BF9-B694-8EC0ACAC5C17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
